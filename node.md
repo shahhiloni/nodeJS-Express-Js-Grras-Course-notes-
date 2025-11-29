@@ -145,3 +145,27 @@ Note: 1. Without CORS - frontend API call blocked
 5. 500 - 599 
 - 500 (Internal Server Error) : Unexpected backend error (Most common backend crash)
 
+-------------------------------- MVC PATTERN in NODE JS  ----------------------------------
+MVC = Model + View + Controller
+
+-- It is a software architecture pattern used to structure backend applications. It separates the application into three main layers so that code becomes clean, organized, scalable, and easy to maintain.
+
+1. M - Model : Data + Database (Interacting with database (CRUD operation))
+2. V - View : UI / Frontend part (Displaying data to users (EJS, HTML, React, etc.))  
+3. C - Controller : Logic / Brain (Receives request, handles logic, and sends response)
+
+
+ ----------- MVC Pattern Flow in Node JS + Express Js  -------------
+Step : 1: Client (Browser / Postman)
+Step : 2 : Controller  ← receives request
+Step : 3 : Model  ← interacts with database
+Step : 4 : Controller ← prepares response
+Step : 5 : View ← data displayed (optional, if UI exists)
+
+2. Why MVC used in Node js? 
+- Keeps code structured and maintainable
+- Separates business logic from routes
+- Can scale projects easily
+- Useful for team development
+
+---------------------- JWT AUTH ----------------------
