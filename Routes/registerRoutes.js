@@ -1,4 +1,6 @@
 const express = require("express");
+
+const bcrypt = require("bcryptjs");
 const Register = require("../Model/Register");
 
 const router = express.Router();
@@ -6,18 +8,20 @@ const router = express.Router();
 // POST Register API
 router.post("/register", async (req, res) => {
   try {
-    const { name, email, password, mobile } = req.body;
+    const { name, email, password, contact } = req.body;
 
     const existingUser = await Register.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: "User already registered" });
     }
 
+    // hash password 
+    const hashPassword = await bcrypt.hash(password, 10);
     const newUser = new Register({
       name,
       email,
-      password,
-      mobile,
+      password: hashPassword,
+      contact,
     });
 
     await newUser.save();

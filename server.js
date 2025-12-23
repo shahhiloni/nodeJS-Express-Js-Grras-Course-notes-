@@ -21,6 +21,9 @@ db.once("open", () =>
 const registerRoutes = require("./Routes/registerRoutes");
 app.use("/api", registerRoutes);
 
+const loginRoutes = require("./Routes/loginRoutes");
+app.use("/api", loginRoutes)
+
 // Server
 app.listen(3000, () =>
   console.log("Server started on port 3000")
