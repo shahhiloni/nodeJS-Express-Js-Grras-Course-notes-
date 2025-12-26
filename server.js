@@ -9,6 +9,8 @@ app.use(express.json());
 // MongoDB Connection
 mongoose.connect("mongodb://localhost:27017/FullStack_dev");
 
+mongoose.connect("")
+
 const db = mongoose.connection;
 db.on("error", (error) =>
   console.error("DB not connected", error)

@@ -1,0 +1,4 @@
+MongoDB_username :  shahhiloni411_db_user
+MongoDB_password : X8AXiwywE84QPMEL
+MongoDB_url : mongosh "mongodb+srv://cluster0.qrh7ylb.mongodb.net/" --apiVersion 1 --username shahhiloni411_db_user --password X8AXiwywE84QPMEL 
+
