@@ -1,8 +1,6 @@
 const express = require("express");
-
 const bcrypt = require("bcryptjs");
 const Register = require("../Model/Register");
-
 const router = express.Router();
 
 // POST Register API
