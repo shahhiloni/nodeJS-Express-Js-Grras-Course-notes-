@@ -6,6 +6,11 @@ const app = express();
 // Middleware
 app.use(cors()); 
 app.use(express.json());
+app.use(cors({
+  origin: 'http://localhost:4000',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
+}));
 
 // MongoDB Connection
 mongoose.connect("mongodb://localhost:27017/FullStack_dev");
@@ -24,6 +29,8 @@ app.use("/api", registerRoutes);
 
 const loginRoutes = require("./Routes/loginRoutes");
 app.use("/api", loginRoutes)
+const resultRoutes = require("./Routes/resultRoutes");
+app.use("/api", resultRoutes);
 
 // Server
 app.listen(4000, () =>
