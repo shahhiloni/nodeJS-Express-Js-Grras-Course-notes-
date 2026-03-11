@@ -29,6 +29,7 @@ app.use("/api", registerRoutes);
 
 const loginRoutes = require("./Routes/loginRoutes");
 app.use("/api", loginRoutes)
+
 const resultRoutes = require("./Routes/resultRoutes");
 app.use("/api", resultRoutes);
 
