@@ -27,9 +27,11 @@ db.once("open", () =>
 const registerRoutes = require("./Routes/registerRoutes");
 app.use("/api", registerRoutes);
 
+//login Routes
 const loginRoutes = require("./Routes/loginRoutes");
 app.use("/api", loginRoutes)
 
+// result Routes
 const resultRoutes = require("./Routes/resultRoutes");
 app.use("/api", resultRoutes);
 

@@ -13,5 +13,5 @@ const registerSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Force collection name = register
+
 module.exports = mongoose.model("Register", registerSchema, "Register");
