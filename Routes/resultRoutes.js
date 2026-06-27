@@ -23,7 +23,7 @@ router.post("/save-result", async (req, res) => {
 
 
 // Get All Results
-router.get("/results", async (req, res) => {
+router.get("/save-result", async (req, res) => {
 
   const results = await Result.find();
 

@@ -34,4 +34,13 @@ Step : 6 : Represent the UI Component (VIEW)
 3. support large - scale Project
 
 
+// Id : int , Name : String, Date : DATE  // DataType
 
+// ID : int, Name: VARCHAR, Date : DATE, Contact: Big Int  // DataType (database storage)
+
+- ID : "2" - 
+
+// Database ()
+
+- Id : "string" 
+- name : 909090909
