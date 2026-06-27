@@ -10,7 +10,7 @@
 ## BSON : binary JSON
 - JSON  
 
-{
+{   
     "name" : "xxx", 
     "email": "xx@gmail.com"
 }
